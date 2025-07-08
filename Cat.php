@@ -1,15 +1,24 @@
 <?php
 
 class Cat {
-    public $name = "Мурка";
-    
+    public $name;
+    public $color = "Белый";
     public function voice() {
         echo "Мяу!";
+    }
+    public function viewColor() {
+        echo $this->color;
     }
 }
 
 
-$myCat = new Cat;
+$barsik = new Cat;
+// $barsik->name = "Барсик";
+// echo $barsik->name;
+// $barsik->voice();
 
-$myCat->voice();
-echo($myCat->name);
+$barsik->viewColor();
+
+$murka = new Cat();
+$murka->color = 'Серый';
+$murka->viewColor();
